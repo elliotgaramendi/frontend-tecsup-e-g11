@@ -12,3 +12,10 @@
   font-family: var(--primary-font-family);
   margin: 0;
 }
+
+.hero {
+  background-image: url(https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
