@@ -1,6 +1,14 @@
+:root {
+  --primary-theme-color: #20232a;
+  --secondary-theme-color: #282c34;
+  --primary-text-color: #fff;
+  --primary-highlight-color: #61dafb;
+  --primary-font-family: monospace;
+}
+
 .body {
-  background-color: #20232a;
-  color: white;
-  font-family: monospace;
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
   margin: 0;
 }
