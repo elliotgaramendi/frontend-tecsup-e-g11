@@ -1,25 +1,4 @@
-:root {
-  scroll-behavior: smooth;
-  --primary-theme-color: #20232a;
-  --secondary-theme-color: #282c34;
-  --primary-text-color: #fff;
-  --secondary-text-color: #aeaeae;
-  --reverse-primary-text-color: #000;
-  --primary-invalid-color: crimson;
-  --primary-shadow-color: #20232a80;
-  --secondary-shadow-color: #282c3480;
-  --tertiary-shadow-color: #00000040;
-  --reverse-primary-shadow-color: #fff8;
-  --primary-highlight-color: #61dafb;
-  --secondary-highlight-color: gold;
-  --primary-button-color: #61dafb;
-  --secondary-button-color: gold;
-  --primary-font-family: 'Inconsolata', monospace;
-  --padding-section: 1.5rem;
-  --padding-container: 1rem;
-  --max-width-container: 640px;
-  --primary-border-radius: 0.5rem;
-}
+@import './modules/variables.css';
 
 .body {
   background-color: var(--primary-theme-color);
