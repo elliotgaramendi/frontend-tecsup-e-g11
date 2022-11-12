@@ -74,6 +74,14 @@
   margin: 0;
 }
 
+.card__text::before {
+  content: '❤';
+}
+
+.card__text::after {
+  content: '❤';
+}
+
 .card__footer {
   background-color: var(--primary-shadow-color);
   padding: 1rem;
