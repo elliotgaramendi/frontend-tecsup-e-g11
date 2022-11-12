@@ -23,11 +23,15 @@
 }
 
 .card {
-  border: 0.125rem solid var(--primary-highlight-color);
+  border: 0.125rem solid var(--primary-text-color);
   border-radius: 1rem;
   max-width: 320px;
   margin: auto;
   overflow: hidden;
+}
+
+.card:hover {
+  border: 0.125rem solid var(--primary-highlight-color);
 }
 
 .card__header {
