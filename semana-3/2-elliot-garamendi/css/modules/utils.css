@@ -1,0 +1,3 @@
+.gap-sm {
+  gap: calc(var(--padding-section) * 0.5);
+}
