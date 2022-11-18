@@ -1,4 +1,11 @@
 .nav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav__logo {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
