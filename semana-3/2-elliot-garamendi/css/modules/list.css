@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+.list--header {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4rem);
+  background-color: var(--secondary-theme-color);
+}
+
 .list__link {
   position: relative;
   color: var(--primary-text-color);
