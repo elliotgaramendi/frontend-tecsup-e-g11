@@ -31,3 +31,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.f-elements--responsive {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .f-elements--responsive {
+    flex-direction: row;
+  }
+}
