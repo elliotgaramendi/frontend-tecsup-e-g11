@@ -1,6 +1,11 @@
 .nav {
+  --translate-list-header: 100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.nav:target {
+  --translate-list-header: 0;
 }
 
 .nav__logo {

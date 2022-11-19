@@ -11,6 +11,8 @@
   width: 100%;
   height: calc(100% - 4rem);
   background-color: var(--secondary-theme-color);
+  transform: translateX(var(--translate-list-header));
+  transition: transform 0.25s;
 }
 
 .list__link {
