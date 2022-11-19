@@ -13,3 +13,9 @@
 .gap-md {
   gap: var(--padding-section);
 }
+
+@media (min-width: 768px) {
+  .md\:f-direction-row {
+    flex-direction: row;
+  }
+}

@@ -41,3 +41,12 @@
 .list__link:hover::before {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .list--header {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+}

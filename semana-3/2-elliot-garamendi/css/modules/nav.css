@@ -34,3 +34,14 @@
 .nav__icon--close {
   transform: scale(var(--scale-close));
 }
+
+@media (min-width: 768px) {
+  .nav {
+    --translate-list-header: 0;
+    --scale-menu: 0;
+  }
+
+  .nav:target {
+    --scale-close: 0;
+  }
+}
