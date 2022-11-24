@@ -4,3 +4,10 @@
   --primary-text-color: #fff;
   --primary-highlight-color: #61dafb;
 }
+
+.body {
+  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+  color: var(--primary-text-color);
+  font-family: serif;
+  min-height: 100vh;
+}
