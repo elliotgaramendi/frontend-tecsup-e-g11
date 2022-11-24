@@ -1,8 +1,9 @@
 @import './modules/variables.css';
+@import './modules/hero.css';
 
 .body {
   background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
   color: var(--primary-text-color);
   font-family: serif;
-  min-height: 100vh;
+  margin: 0;
 }
