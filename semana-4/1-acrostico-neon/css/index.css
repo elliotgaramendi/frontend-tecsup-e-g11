@@ -1,3 +1,6 @@
-.body {
-  background-color: black;
+:root {
+  --primary-theme-color: deeppink;
+  --secondary-theme-color: #20232a;
+  --primary-text-color: #fff;
+  --primary-highlight-color: #61dafb;
 }
