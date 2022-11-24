@@ -1,9 +1,4 @@
-:root {
-  --primary-theme-color: deeppink;
-  --secondary-theme-color: #20232a;
-  --primary-text-color: #fff;
-  --primary-highlight-color: #61dafb;
-}
+@import './modules/variables.css';
 
 .body {
   background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
