@@ -1,0 +1,48 @@
+.card {
+  box-shadow: 0 0 0.25rem 0 var(--primary-shadow-color);
+  border-radius: var(--primary-border-radius);
+  max-width: 320px;
+  overflow: hidden;
+  transition: box-shadow 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
+}
+
+.card__header,
+.card__footer {
+  background-color: var(--reverse-primary-shadow-color);
+  padding: 0.5rem 1rem;
+}
+
+.card__body {
+  background-color: var(--reverse-secondary-shadow-color);
+  padding: 1rem;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.card__subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+.card__text {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.card__text::before {
+  content: '❤';
+}
+
+.card__text::after {
+  content: '❤';
+}
