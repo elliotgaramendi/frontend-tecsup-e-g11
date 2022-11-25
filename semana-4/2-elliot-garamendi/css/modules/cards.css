@@ -38,11 +38,3 @@
   text-align: center;
   margin: 0;
 }
-
-.card__text::before {
-  content: '❤';
-}
-
-.card__text::after {
-  content: '❤';
-}
