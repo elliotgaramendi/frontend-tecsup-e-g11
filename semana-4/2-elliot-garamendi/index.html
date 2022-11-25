@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Elliot Garamendi</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="nav" id="header-nav">
+      <div class="container f-elements f-elements--header p-relative">
+        <a href="#hero">
+          <img src="./assets/img/foto-elliot.garamendi.webp" alt="Logo Elliot Garamendi" width="40" height="40"
+            class="nav__logo" />
+        </a>
+        <a href="#header-nav" class="nav__icon nav__icon--menu">
+          <i class="bi bi-list"></i>
+        </a>
+        <a href="#header-close" class="nav__icon nav__icon--close">
+          <i class="bi bi-x-circle"></i>
+        </a>
+        <ul class="list list--header f-elements f-elements--center f-elements--responsive gap-md">
+          <li>
+            <a href="#hero" class="list__link">Perfil</a>
+          </li>
+          <li>
+            <a href="#experiences" class="list__link">Experiencia</a>
+          </li>
+          <li>
+            <a href="#contact" class="list__link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article id="hero" class="section section--hero f-elements f-elements--center">
+      <div class="container f-elements f-elements--center f-elements--responsive">
+        <div class="flex-1">
+          <header>
+            <h1>🌌 Elliot Garamendi 🌌</h1>
+          </header>
+          <section>
+            <h2>❤ El mejor desarrollador web Frontend React del Perú ❤</h2>
+            <p>
+              ⚛ Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo Web
+              Frontend.
+              Apasionado del autoaprendizaje y del código limpio. ⚛
+            </p>
+          </section>
+          <footer>
+            <div>
+              <a href="https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=7q73aZ" target="_blank"
+                rel="noopener noreferrer">CV</a>
+              <a href="https://github.com/ElliotXLeo" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </footer>
+        </div>
+        <div class="flex-1 f-elements f-elements--center">
+          <img src="./assets/img/elliot-garamendi.webp" alt="Elliot Garamendi" width="256">
+          <figure>
+            <img src="./assets/img/logo-html-5.svg" alt="HTML" width="64" height="64" />
+            <img src="./assets/img/logo-css-3.svg" alt="CSS" width="64" height="64" />
+            <img src="./assets/img/logo-javascript.svg" alt="JavaScript" width="64" height="64" />
+            <img src="./assets/img/logo-react.svg" alt="React" width="64" height="64" />
+          </figure>
+        </div>
+      </div>
+    </article>
+    <section id="experiences">
+      <div>
+        <h2>👨‍💻 Experiencias 👨‍💻</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Empresa</th>
+              <th>Cargo</th>
+              <th>Funciones</th>
+              <th>Periodo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Cineplanet</td>
+              <td>Frontend Developer</td>
+              <td>
+                <ul>
+                  <li>
+                    Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.
+                  </li>
+                  <li>
+                    Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.
+                  </li>
+                </ul>
+              </td>
+              <td>julio 2022, presente</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Tecsup</td>
+              <td>Docente Frontend</td>
+              <td>
+                <ul>
+                  <li>
+                    Bootcamp: Desarrollo Frontend: git, Lógica P., HTML, CSS, JS, B, Sass, Node, React, Testing.
+                  </li>
+                  <li>
+                    Desarrollo de proyectos y materiales para el aprendizaje teórico y práctico de los alumnos.
+                  </li>
+                </ul>
+              </td>
+              <td>enero 2022, presente</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>DRIVEN</td>
+              <td>Frontend Developer</td>
+              <td>
+                <ul>
+                  <li>
+                    Desarrollo de aplicaciones e-commerce con VTEX IO y React bajo el marco de trabajo Scrum.
+                  </li>
+                  <li>
+                    Maquetación web de diseños del Figma en React esencialmente con CSS.
+                  </li>
+                </ul>
+              </td>
+              <td>septiembre 2021, presente</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <a href="https://www.linkedin.com/in/elliotgaramendi/" target="_blank" rel="noopener noreferrer">Ver más
+                  experiencias</a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <h2>🤗 Contacto 🤗</h2>
+        <form>
+          <input type="tel" placeholder="Celular" required />
+          <button>Contactar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/@elliotgaramendi">
+            <img src="./assets/img/logo-youtube.svg" alt="YouTube" width="24" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ElliotXLeo">
+            <img src="./assets/img/logo-github.svg" alt="GitHub" width="24" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/elliotgaramendi/">
+            <img src="./assets/img/logo-linkedin.svg" alt="LinkedIn" width="24" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/elliotgaramendi/">
+            <img src="./assets/img/logo-instagram.svg" alt="Instagram" width="24" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/elliotgaramendi">
+            <img src="./assets/img/logo-facebook.svg" alt="Facebook" width="24" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="https://elliotxleo.github.io/portafolio-web-elgs/">
+            <img src="./assets/img/logo-internet.svg" alt="Web" width="24" height="24" />
+          </a>
+        </li>
+      </ul>
+      <h5>
+        🦄 Copyright &copy;
+        <a href="https://www.linkedin.com/in/elliotgaramendi/">
+          Elliot Garamendi
+        </a>
+        Todos los derechos reservados. 🦄
+        </h2>
+    </nav>
+  </footer>
+</body>
+
+</html>

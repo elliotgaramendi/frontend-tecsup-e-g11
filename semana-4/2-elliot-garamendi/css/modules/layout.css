@@ -1,0 +1,43 @@
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+
+.section--hero {
+  background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.f-elements {
+  display: flex;
+}
+
+.f-elements--header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-elements--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.f-elements--responsive {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .f-elements--responsive {
+    flex-direction: row;
+  }
+}

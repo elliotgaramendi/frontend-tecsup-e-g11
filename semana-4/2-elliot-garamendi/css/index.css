@@ -1,0 +1,13 @@
+@import './modules/variables.css';
+@import './modules/utils.css';
+@import './modules/layout.css';
+@import './modules/header.css';
+@import './modules/nav.css';
+@import './modules/list.css';
+
+.body {
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
+}
