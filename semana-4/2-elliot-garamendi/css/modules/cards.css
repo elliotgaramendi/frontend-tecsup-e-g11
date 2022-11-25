@@ -1,5 +1,7 @@
 .card {
-  box-shadow: 0 0 0.25rem 0 var(--primary-shadow-color);
+  box-shadow:
+    0 0 0.0125rem 0.0625rem var(--primary-shadow-color),
+    0 0 0.25rem 0.125rem var(--primary-shadow-color);
   border-radius: var(--primary-border-radius);
   max-width: 320px;
   overflow: hidden;
@@ -7,7 +9,9 @@
 }
 
 .card:hover {
-  box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
+  box-shadow:
+    0 0 0.125rem 0.0625rem var(--primary-highlight-color),
+    0 0 0.25rem 0.125rem var(--primary-highlight-color);
 }
 
 .card__header,
