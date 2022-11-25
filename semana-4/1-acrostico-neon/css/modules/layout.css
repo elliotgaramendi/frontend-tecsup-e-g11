@@ -1,8 +1,27 @@
-.hero {
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+
+.section--hero {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.f-elements {
   display: flex;
+}
+
+.f-elements--center {
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .hero__name {
