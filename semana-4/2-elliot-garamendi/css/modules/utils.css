@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.flex-1 {
-  flex: 1;
-}
-
 .f-direction-column {
   flex-direction: column;
 }
