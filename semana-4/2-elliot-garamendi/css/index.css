@@ -5,6 +5,7 @@
 @import './modules/nav.css';
 @import './modules/list.css';
 @import './modules/cards.css';
+@import './modules/buttons.css';
 
 .body {
   background-color: var(--primary-theme-color);
