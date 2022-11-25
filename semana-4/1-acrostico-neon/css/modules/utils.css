@@ -1,0 +1,7 @@
+.f-direction-column {
+  flex-direction: column;
+}
+
+.gap-sm {
+  gap: calc(var(--padding-section) * 0.5);
+}

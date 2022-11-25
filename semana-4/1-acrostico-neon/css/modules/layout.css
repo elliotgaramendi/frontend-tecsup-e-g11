@@ -67,6 +67,10 @@
   transform: rotateX(137.5deg);
 }
 
+.section__verse {
+
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
