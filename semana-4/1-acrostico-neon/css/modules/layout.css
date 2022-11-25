@@ -8,6 +8,65 @@
   min-height: 100vh;
 }
 
+
+.section__name {
+  display: flex;
+  font-size: 4rem;
+  text-decoration: none;
+  animation: zoom 1s ease-in-out 0s infinite alternate;
+}
+
+.section__letter {
+  position: relative;
+  transition: filter 1s ease-in-out;
+}
+
+.section__letter:hover {
+  filter: brightness(2.5);
+}
+
+.section__letter:nth-child(1) {
+  color: var(--letter-color-1);
+}
+
+.section__letter:nth-child(2) {
+  color: var(--letter-color-2);
+}
+
+.section__letter:nth-child(3) {
+  color: var(--letter-color-3);
+}
+
+.section__letter:nth-child(4) {
+  color: var(--letter-color-4);
+}
+
+.section__letter:nth-child(5) {
+  color: var(--letter-color-5);
+}
+
+.section__letter:nth-child(6) {
+  color: var(--letter-color-6);
+}
+
+.section__letter::before {
+  content: var(--letter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(0.25rem);
+  transform: scale(1.125);
+}
+
+.section__letter::after {
+  content: var(--letter);
+  position: absolute;
+  top: 87.5%;
+  left: 0;
+  filter: blur(0.125rem);
+  transform: rotateX(137.5deg);
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
@@ -22,63 +81,4 @@
 .f-elements--center {
   align-items: center;
   justify-content: center;
-}
-
-.hero__name {
-  display: block;
-  font-size: 4rem;
-  text-decoration: none;
-  animation: zoom 1s ease-in-out 0s infinite alternate;
-}
-
-.hero__letter {
-  display: inline-block;
-  position: relative;
-  transition: filter 1s ease-in-out;
-}
-
-.hero__letter:hover {
-  filter: brightness(2.5);
-}
-
-.hero__letter:nth-child(1) {
-  color: #00bef8;
-}
-
-.hero__letter:nth-child(2) {
-  color: #ff0697;
-}
-
-.hero__letter:nth-child(3) {
-  color: #ff4d00;
-}
-
-.hero__letter:nth-child(4) {
-  color: #ffe600;
-}
-
-.hero__letter:nth-child(5) {
-  color: #bb00ff;
-}
-
-.hero__letter:nth-child(6) {
-  color: #f5926b;
-}
-
-.hero__letter::before {
-  content: var(--letter);
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: blur(0.25rem);
-  transform: scale(1.125);
-}
-
-.hero__letter::after {
-  content: var(--letter);
-  position: absolute;
-  top: 87.5%;
-  left: 0;
-  filter: blur(0.125rem);
-  transform: rotateX(137.5deg);
 }
