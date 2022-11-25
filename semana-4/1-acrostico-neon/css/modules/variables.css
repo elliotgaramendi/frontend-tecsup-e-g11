@@ -10,7 +10,7 @@
   --letter-color-4: #ffe600;
   --letter-color-5: #bb00ff;
   --letter-color-6: #f5926b;
-  --primary-font-family: serif;
+  --primary-font-family: 'Inconsolata', monospace;
   --max-width-container: 1024px;
   --padding-section: 1.5rem;
   --padding-container: 1rem;
