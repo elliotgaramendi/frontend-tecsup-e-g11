@@ -11,6 +11,14 @@
   min-height: 100vh;
 }
 
+.section__hero-img {
+  border-radius: 50%;
+}
+
+.section__hero-decoratos {}
+
+.section__hero-decorator {}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
