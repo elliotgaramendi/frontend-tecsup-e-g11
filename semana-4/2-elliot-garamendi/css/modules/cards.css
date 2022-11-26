@@ -20,6 +20,14 @@
   padding: 0.5rem 1rem;
 }
 
+.card__img {
+  display: flex;
+  background-color: var(--secondary-shadow-color);
+  width: 100%;
+  height: 200;
+  object-fit: cover;
+}
+
 .card__body {
   background-color: var(--reverse-secondary-shadow-color);
   padding: 1rem;

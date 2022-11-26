@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.gap-xs {
+  gap: calc(var(--padding-section) * 0.25);
+}
+
 .gap-sm {
   gap: calc(var(--padding-section) * 0.5);
 }

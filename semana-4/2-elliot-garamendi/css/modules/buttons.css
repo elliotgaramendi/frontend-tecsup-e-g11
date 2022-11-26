@@ -18,20 +18,30 @@
 }
 
 .button--primary {
-  background-color: var(--primary-highlight-color);
-  border: 0.0625rem solid var(--primary-highlight-color);
+  background-color: var(--primary-button-color);
+  border: 0.0625rem solid var(--primary-button-color);
   color: var(--reverse-primary-text-color);
 }
 
 .button--primary:hover {
-  box-shadow: 0 0 0.25rem 0.0625rem var(--primary-highlight-color);
+  box-shadow: 0 0 0.25rem 0.0625rem var(--primary-button-color);
+}
+
+.button--secondary {
+  background-color: var(--secondary-button-color);
+  border: 0.0625rem solid var(--secondary-button-color);
+  color: var(--reverse-primary-text-color);
+}
+
+.button--secondary:hover {
+  box-shadow: 0 0 0.25rem 0.0625rem var(--secondary-button-color);
 }
 
 .button--outline-primary {
   background-color: transparent;
-  border: 0.0625rem solid var(--primary-highlight-color);
+  border: 0.0625rem solid var(--primary-button-color);
 }
 
 .button--outline-primary:hover {
-  box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
+  box-shadow: 0 0 0.25rem 0 var(--primary-button-color);
 }
