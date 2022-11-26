@@ -1,0 +1,5 @@
+@keyframes t-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
