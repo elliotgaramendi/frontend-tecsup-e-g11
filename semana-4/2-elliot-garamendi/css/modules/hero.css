@@ -57,3 +57,14 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
 }
+
+@media (min-width: 768px) {
+  .hero__img {
+    max-width: 320px;
+  }
+
+  .hero__primary-img {
+    width: 320px;
+    height: 320px;
+  }
+}

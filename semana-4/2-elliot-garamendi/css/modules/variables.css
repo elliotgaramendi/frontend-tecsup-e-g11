@@ -14,8 +14,16 @@
   --primary-button-color: #61dafb;
   --secondary-button-color: gold;
   --primary-font-family: 'Inconsolata', monospace;
-  --max-width-container: 1024px;
+  --max-width-container: 512px;
   --padding-section: 1.5rem;
   --padding-container: 1rem;
   --primary-border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --max-width-container: 1024px;
+    --padding-section: 2rem;
+    --padding-container: 0.75rem;
+  }
 }
