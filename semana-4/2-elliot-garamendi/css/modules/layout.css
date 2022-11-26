@@ -12,12 +12,29 @@
 }
 
 .section__hero-img {
+  background-color: #fff8;
   border-radius: 50%;
 }
 
-.section__hero-decoratos {}
+.section__hero-decorators {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 256px;
+  background-color: #fff8;
+  margin: 0;
+}
 
-.section__hero-decorator {}
+.section__hero-decorator {
+  position: absolute;
+}
+
+.section__hero-decorator:nth-child(1) {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .container {
   max-width: var(--max-width-container);
