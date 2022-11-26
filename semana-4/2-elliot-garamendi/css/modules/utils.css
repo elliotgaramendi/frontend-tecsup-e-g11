@@ -18,6 +18,10 @@
   gap: var(--padding-section);
 }
 
+.gap-lg {
+  gap: calc(var(--padding-section) * 1.5);
+}
+
 @media (min-width: 768px) {
   .md\:d-block {
     display: block;

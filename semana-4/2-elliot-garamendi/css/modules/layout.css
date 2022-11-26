@@ -12,26 +12,52 @@
 }
 
 .section__hero-img {
+  position: relative;
+  max-width: 256px;
+}
+
+.section__hero-img-img {
+  display: flex;
   background-color: #fff8;
   border-radius: 50%;
+  width: 256px;
+  height: 256px;
 }
 
 .section__hero-decorators {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 256px;
-  height: 256px;
-  background-color: #fff8;
   margin: 0;
 }
 
 .section__hero-decorator {
   position: absolute;
+  display: flex;
 }
 
 .section__hero-decorator:nth-child(1) {
   top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section__hero-decorator:nth-child(2) {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.section__hero-decorator:nth-child(3) {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.section__hero-decorator:nth-child(4) {
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,6 +93,12 @@
 
 .g-elements {
   display: grid;
+}
+
+.g-elements--center {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .g-elements--responsive {
