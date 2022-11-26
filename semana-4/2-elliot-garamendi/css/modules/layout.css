@@ -41,10 +41,6 @@
   display: grid;
 }
 
-.g-elements {
-  display: grid;
-}
-
 .g-elements--center {
   align-items: center;
   justify-content: center;
@@ -55,6 +51,10 @@
   grid-template-columns: 100%;
 }
 
+.g-elements--gallery {
+  grid-template-columns: 100%;
+}
+
 @media (min-width: 768px) {
   .f-elements--responsive {
     flex-direction: row;
@@ -62,5 +62,9 @@
 
   .g-elements--responsive {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .g-elements--gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

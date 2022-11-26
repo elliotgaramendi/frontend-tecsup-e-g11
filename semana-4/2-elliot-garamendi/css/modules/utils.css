@@ -6,8 +6,16 @@
   position: relative;
 }
 
+.m-top-auto {
+  margin-top: auto;
+}
+
 .f-direction-column {
   flex-direction: column;
+}
+
+.j-items-center {
+  justify-items: center;
 }
 
 .gap-xs {

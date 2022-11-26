@@ -31,6 +31,7 @@
 .card__body {
   background-color: var(--reverse-secondary-shadow-color);
   padding: 1rem;
+  height: 100%;
 }
 
 .card__title {
