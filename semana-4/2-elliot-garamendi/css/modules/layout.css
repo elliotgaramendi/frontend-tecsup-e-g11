@@ -3,6 +3,15 @@
   padding-bottom: var(--padding-section);
 }
 
+.section__title {
+  font-size: 1.5rem;
+  text-shadow:
+    0 0 0.125rem var(--primary-highlight-color),
+    0 0 0.25rem var(--primary-highlight-color);
+  text-align: center;
+  margin: 0;
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
