@@ -1,0 +1,58 @@
+.hero {
+  background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.hero__img {
+  position: relative;
+  max-width: 256px;
+}
+
+.hero__primary-img {
+  display: flex;
+  background-color: var(--secondary-shadow-color);
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+}
+
+.hero__decorators {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.hero__decorator {
+  position: absolute;
+  display: flex;
+}
+
+.hero__decorator:nth-child(1) {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.hero__decorator:nth-child(2) {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.hero__decorator:nth-child(3) {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.hero__decorator:nth-child(4) {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}

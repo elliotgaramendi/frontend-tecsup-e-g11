@@ -3,65 +3,6 @@
   padding-bottom: var(--padding-section);
 }
 
-.section--hero {
-  background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
-  background-position: center;
-  background-size: cover;
-  box-sizing: border-box;
-  min-height: 100vh;
-}
-
-.section__hero-img {
-  position: relative;
-  max-width: 256px;
-}
-
-.section__hero-img-img {
-  display: flex;
-  background-color: #fff8;
-  border-radius: 50%;
-  width: 256px;
-  height: 256px;
-}
-
-.section__hero-decorators {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-}
-
-.section__hero-decorator {
-  position: absolute;
-  display: flex;
-}
-
-.section__hero-decorator:nth-child(1) {
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.section__hero-decorator:nth-child(2) {
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-}
-
-.section__hero-decorator:nth-child(3) {
-  top: 50%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-}
-
-.section__hero-decorator:nth-child(4) {
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
