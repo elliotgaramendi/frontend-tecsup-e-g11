@@ -1,3 +1,7 @@
+.gap-sm {
+  gap: calc(var(--padding-section) * 0.25);
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
