@@ -1,0 +1,15 @@
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.f-elements {
+  display: flex;
+
+  &--header {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
