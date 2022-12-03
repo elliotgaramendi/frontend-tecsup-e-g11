@@ -8,4 +8,13 @@
   box-shadow: 0 0 0.125rem var(--primary-shadow-color);
 }
 
+.nav {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.nav__logo {
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=fe.css.map */
