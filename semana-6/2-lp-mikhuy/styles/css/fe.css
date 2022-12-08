@@ -72,7 +72,8 @@
   padding-bottom: 0.75rem;
 }
 .nav__logo {
-  font-size: 1.75rem;
+  display: flex;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -80,6 +81,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.list--header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-theme-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
 }
 .list__link {
   display: flex;
@@ -94,6 +106,11 @@
 .list__link:hover {
   background-color: var(--primary-highlight-color);
   color: var(--reverse-primary-text-color);
+}
+
+.icon {
+  display: flex;
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=fe.css.map */

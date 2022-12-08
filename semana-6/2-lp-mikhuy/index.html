@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 </head>
 
 <body class="body">
@@ -22,8 +24,8 @@
         <a href="#" class="nav__logo">
           🍲
         </a>
-        <box-icon name='menu-alt-right' id="nav-menu-icon"></box-icon>
-        <ul class="list f-elements gap-xs">
+        <i class="bi bi-list icon" id="icon-menu"></i>
+        <ul class="list list--header f-elements gap-xs">
           <li>
             <a href="#" class="list__link">Menu</a>
           </li>
@@ -34,7 +36,7 @@
             <a href="#" class="list__link">Contacto</a>
           </li>
           <li>
-            <box-icon type='solid' name='x-circle'></box-icon>
+            <i class="bi bi-x-circle icon" id="icon-close"></i>
           </li>
         </ul>
       </div>
@@ -59,7 +61,6 @@
     </article>
   </main>
 
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
