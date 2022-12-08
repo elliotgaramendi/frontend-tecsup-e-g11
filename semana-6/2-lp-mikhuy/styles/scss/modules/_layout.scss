@@ -1,0 +1,45 @@
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+
+  box-sizing: border-box;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.f-elements {
+  display: flex;
+
+  &--header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}
