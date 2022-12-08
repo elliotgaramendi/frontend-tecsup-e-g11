@@ -18,6 +18,10 @@
   gap: calc(var(--padding-section) * 0.5);
 }
 
+.gap-md {
+  gap: var(--padding-section);
+}
+
 .section {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
@@ -55,6 +59,14 @@
 .f-elements--center {
   align-items: center;
   justify-content: center;
+}
+.f-elements--responsive {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .f-elements--responsive {
+    flex-direction: row;
+  }
 }
 
 .header {

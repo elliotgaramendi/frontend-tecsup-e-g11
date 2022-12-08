@@ -17,3 +17,7 @@
 .gap-sm {
   gap: calc(var(--padding-section) * 0.5);
 }
+
+.gap-md {
+  gap: var(--padding-section);
+}
