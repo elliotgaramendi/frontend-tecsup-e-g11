@@ -15,6 +15,11 @@
     transition: opacity 0.25s;
   }
 
+  &--header-show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   &__link {
     display: flex;
     background-color: var(--secondary-theme-color);

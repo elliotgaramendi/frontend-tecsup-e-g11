@@ -93,6 +93,10 @@
   pointer-events: none;
   transition: opacity 0.25s;
 }
+.list--header-show {
+  opacity: 1;
+  pointer-events: auto;
+}
 .list__link {
   display: flex;
   background-color: var(--secondary-theme-color);
