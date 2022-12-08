@@ -80,8 +80,13 @@
 }
 
 .nav {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  --padding-nav: 1rem;
+  padding-top: var(--padding-nav);
+  padding-bottom: var(--padding-nav);
+  transition: padding 0.25s;
+}
+.nav--scroll {
+  --padding-nav: 0.5rem;
 }
 .nav__logo {
   display: flex;
@@ -111,6 +116,8 @@
     background-color: transparent;
     width: auto;
     height: auto;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 .list--header-show {
@@ -143,8 +150,9 @@
 }
 .icon--close {
   position: absolute;
-  top: 1rem;
+  top: calc(var(--padding-nav) + 0.25rem);
   right: var(--padding-container);
+  transition: top 0.25s;
 }
 
 /*# sourceMappingURL=fe.css.map */

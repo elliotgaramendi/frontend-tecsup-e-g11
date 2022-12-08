@@ -11,7 +11,8 @@
 
   &--close {
     position: absolute;
-    top: 1rem;
+    top: calc(var(--padding-nav) + 0.25rem);
     right: var(--padding-container);
+    transition: top 0.25s;
   }
 }

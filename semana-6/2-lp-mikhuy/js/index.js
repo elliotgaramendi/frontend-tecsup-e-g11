@@ -1,8 +1,13 @@
 'use strict';
 
+const nav = document.querySelector('.nav');
 const iconMenu = document.getElementById('icon-menu');
 const iconClose = document.getElementById('icon-close');
 const listHeader = document.querySelector('.list--header');
+
+document.addEventListener('scroll', () => {
+  nav.classList.toggle('nav--scroll', window.scrollY > 0);
+});
 
 iconMenu.addEventListener('click', () => {
   // listHeader.style.pointerEvents = 'auto';
