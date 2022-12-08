@@ -105,6 +105,14 @@
   pointer-events: none;
   transition: opacity 0.25s;
 }
+@media (min-width: 768px) {
+  .list--header {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+}
 .list--header-show {
   opacity: 1;
   pointer-events: auto;
@@ -127,6 +135,16 @@
 .icon {
   display: flex;
   font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  .icon--menu, .icon--close {
+    display: none;
+  }
+}
+.icon--close {
+  position: absolute;
+  top: 1rem;
+  right: var(--padding-container);
 }
 
 /*# sourceMappingURL=fe.css.map */

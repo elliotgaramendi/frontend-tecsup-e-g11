@@ -1,4 +1,17 @@
 .icon {
   display: flex;
   font-size: 1.75rem;
+
+  &--menu,
+  &--close {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &--close {
+    position: absolute;
+    top: 1rem;
+    right: var(--padding-container);
+  }
 }

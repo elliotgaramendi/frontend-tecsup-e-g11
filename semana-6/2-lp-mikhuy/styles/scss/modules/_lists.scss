@@ -13,6 +13,13 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s;
+
+    @include desktop {
+      position: static;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
   }
 
   &--header-show {
