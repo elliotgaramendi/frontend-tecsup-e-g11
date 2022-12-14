@@ -8,6 +8,7 @@ const documentReady = () => {
     const number1 = +document.getElementById('number1').value;
     const operator = document.getElementById('operator').value;
     const number2 = +document.getElementById('number2').value;
+    const resultContainer = document.getElementById('resultContainer');
 
     let result = 0;
 
@@ -27,7 +28,7 @@ const documentReady = () => {
       default:
         break;
     }
-    alert(result);
+    resultContainer.innerText = result;
   };
 
   calculatorForm.addEventListener('submit', calculate);
