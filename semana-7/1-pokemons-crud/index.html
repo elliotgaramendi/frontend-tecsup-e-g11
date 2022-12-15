@@ -40,21 +40,7 @@
                     <th>Imagen</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Pikachu</td>
-                    <td>Eléctrico</td>
-                    <td>250</td>
-                    <td>Trueno</td>
-                    <td>Voltio</td>
-                    <td>
-                      <img
-                        src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/77/latest/20150621181250/Pikachu.png/1200px-Pikachu.png"
-                        alt="Pikachu" class="img-fluid" style="max-width: 128px;" />
-                    </td>
-                  </tr>
-                </tbody>
+                <tbody id="tBodyPokemons"></tbody>
                 <tfoot>
                   <tr>
                     <td colspan="8" class="text-center fs-6">Hecho por pikachu</td>
@@ -64,7 +50,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <form class="d-flex flex-column gap-3">
+            <form class="d-flex flex-column gap-3" id="formPokemon">
               <div class="form-floating">
                 <input type="text" class="form-control bg-transparent text-light" id="name" placeholder="Nombre"
                   required />
