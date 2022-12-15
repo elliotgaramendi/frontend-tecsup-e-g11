@@ -1,7 +1,7 @@
 'use strict';
 
 const documentReady = () => {
-  const tBodyPokemons = document.getElementById('tBodyPokemons');
+  const pokemons = [];
   const formPokemon = document.getElementById('formPokemon');
 
   const createPokemon = (e) => {
@@ -13,26 +13,31 @@ const documentReady = () => {
     const attack = documentFormPokemon.attack.value;
     const special = documentFormPokemon.special.value;
     const imgUrl = documentFormPokemon.imgUrl.value;
-    readPokemons({ name, type, hp, attack, special, imgUrl });
+    pokemons.push({ name, type, hp, attack, special, imgUrl });
+    readPokemons();
   };
 
-  const readPokemons = (pokemon) => {
-    const { name, type, hp, attack, special, imgUrl } = pokemon;
-    tBodyPokemons.innerHTML += `
-      <tr>
-        <td>1</td>
-        <td>${name}</td>
-        <td>${type}</td>
-        <td>${hp}</td>
-        <td>${attack}</td>
-        <td>${special}</td>
-        <td>
-          <img
-            src="${imgUrl}"
-            alt="${name}" class="img-fluid" style="max-width: 128px;" />
-        </td>
-      </tr>
-    `;
+  const readPokemons = () => {
+    const tBodyPokemons = document.getElementById('tBodyPokemons');
+    tBodyPokemons.innerHTML = '';
+    pokemons.forEach((element, index) => {
+      const { name, type, hp, attack, special, imgUrl } = element;
+      tBodyPokemons.innerHTML += `
+        <tr>
+          <td>${index}</td>
+          <td>${name}</td>
+          <td>${type}</td>
+          <td>${hp}</td>
+          <td>${attack}</td>
+          <td>${special}</td>
+          <td>
+            <img
+              src="${imgUrl}"
+              alt="${name}" class="img-fluid" style="max-width: 128px;" />
+          </td>
+        </tr>
+      `;
+    });
   };
 
   formPokemon.addEventListener('submit', createPokemon);
