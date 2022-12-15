@@ -13,7 +13,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 </head>
 
-<body class="bg-dark text-light" style="min-height: 100vh;">
+<body class="bg-dark text-light d-flex flex-column" style="min-height: 100vh;">
   <header class="fixed-top bg-dark shadow py-2">
     <div class="container">
       <h1 class="fs-2 text-center m-0">Pokémons CRUD</h1>
@@ -90,8 +90,8 @@
                 <label for="special">Especial</label>
               </div>
               <div class="form-floating">
-                <input type="text" class="form-control bg-transparent text-light" id="imgUrl" placeholder="Url de Imagen"
-                  required />
+                <input type="text" class="form-control bg-transparent text-light" id="imgUrl"
+                  placeholder="Url de Imagen" required />
                 <label for="imgUrl">Url de Imagen</label>
               </div>
               <button class="btn btn-outline-light btn-lg w-100">Enviar</button>
@@ -101,6 +101,9 @@
       </div>
     </section>
   </main>
+  <footer class="bg-dark shadow py-2 mt-auto">
+    <h6 class="text-center m-0">Desarrollado por Elliot Garamendi</h6>
+  </footer>
 </body>
 
 </html>
