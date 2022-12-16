@@ -49,7 +49,9 @@ const readPokemons = () => {
 };
 
 const deletePokemon = (index) => {
-  alert('deletePokemon: ' + index);
+  pokemons.splice(index, 1);
+  localStorage.setItem(POKEMONS_CRUD_DATA, JSON.stringify(pokemons));
+  readPokemons();
 };
 
 const documentReady = () => {
