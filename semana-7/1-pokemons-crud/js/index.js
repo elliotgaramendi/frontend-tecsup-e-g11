@@ -37,7 +37,13 @@ const readPokemons = () => {
         </td>
         <td>
           <button 
-            class="btn btn-danger"
+            class="btn btn-info m-1"
+            onclick="readPokemon(${index})"
+          >
+            ✏
+          </button>
+          <button 
+            class="btn btn-danger m-1"
             onclick="deletePokemon(${index})"
           >
             🗑
@@ -46,6 +52,14 @@ const readPokemons = () => {
       </tr>
     `;
   });
+};
+
+const readPokemon = (index) => {
+  // const pokemon = pokemons.find((_, i) => {
+  //   return i === index;
+  // });
+  const pokemon = pokemons.slice(index, index + 1)[0];
+  console.log(pokemon);
 };
 
 const deletePokemon = (index) => {
