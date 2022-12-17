@@ -53,7 +53,7 @@
           </div>
           <div class="col-md-4">
             <form class="d-flex flex-column gap-3 shadow" id="formPokemon">
-              <div class="form-floating">
+              <div class="form-floating" hidden>
                 <input type="number" class="form-control bg-transparent text-light" id="index" placeholder="Nombre"
                   readonly />
                 <label for="index">Id</label>
@@ -83,7 +83,7 @@
                   placeholder="Url de Imagen" />
                 <label for="imgUrl">Url de Imagen</label>
               </div>
-              <button class="btn btn-outline-light btn-lg w-100">Enviar</button>
+              <button class="btn btn-outline-light btn-lg w-100" id="button">Crear</button>
             </form>
           </div>
         </div>
