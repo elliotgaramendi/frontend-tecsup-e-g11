@@ -7,9 +7,9 @@ const foods = () => {
 
     foodsFoods.innerHTML += `
       <div class="col-md-4" key=${id}>
-        <div class="card bg-dark border border-2 border-light border-opacity-25 mx-auto"
+        <div class="card bg-dark border border-2 border-light border-opacity-25 h-100 mx-auto"
           style="width: min(100%, 18rem);">
-          <div class="card-header">
+          <div class="card-header text-center">
             ${name}
           </div>
           <div class="card-body">
@@ -18,8 +18,8 @@ const foods = () => {
             <h5 class="card-title mt-2">${name}</h5>
             <p class="card-text">${description}</p>
           </div>
-          <div class="card-footer text-muted">
-            <a href="${urlRecipe}" class="btn btn-primary">Receta</a>
+          <div class="card-footer text-center">
+            <a href="${urlRecipe}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Receta</a>
           </div>
         </div>
       </div>
