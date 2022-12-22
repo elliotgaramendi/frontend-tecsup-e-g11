@@ -1,7 +1,6 @@
-import comidas from '../../utils/data.json' assert {type: 'json'};
-
 const foods = () => {
   const foodsFoods = document.getElementById('foodsFoods');
+
   comidas.forEach((element) => {
     const { id, name, description, urlImage, urlRecipe } = element;
 
