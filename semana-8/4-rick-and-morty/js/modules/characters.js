@@ -3,7 +3,7 @@ const characters = () => {
     const charactersContainer = document.getElementById('charactersContainer');
 
     data.forEach((element) => {
-      const { id, name, description, urlImage, urlRecipe } = element;
+      const { id, name, status, species, type, gender, origin, location, image } = element;
 
       charactersContainer.innerHTML += `
         <div class="col-md-4" key=${id}>
@@ -13,13 +13,15 @@ const characters = () => {
               ${name}
             </div>
             <div class="card-body">
-              <img src="${urlImage}" class="card-img-top" alt="Anime 1" width="256" height="144"
-                style="width: 100%; height: 192px; object-fit: cover; border-radius: 0.5rem">
+              <img src="${image}" class="card-img-top" alt="Anime 1" width="256" height="144"
+                style="width: 100%; height: 192px; object-fit: cover; border-radius: 0.5rem"/>
               <h5 class="card-title mt-2">${name}</h5>
-              <p class="card-text">${description}</p>
+              <h6 class="card-subtitle mb-2 text-muted">${type || 'Chanchito'}</h6>
+              <p class="card-text">${status}</p>
+              <a href="#" class="card-link">Card link</a>
             </div>
             <div class="card-footer text-center">
-              <a href="${urlRecipe}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Receta</a>
+              <a href="${species}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Receta</a>
             </div>
           </div>
         </div>
@@ -30,7 +32,7 @@ const characters = () => {
   const fetchRead = async () => {
     try {
       const { data } = await axios.get('https://rickandmortyapi.com/api/character?page=1');
-      console.log(data);
+      renderCharacters(data.results);
     } catch (error) {
       console.log(error);
     } finally {
