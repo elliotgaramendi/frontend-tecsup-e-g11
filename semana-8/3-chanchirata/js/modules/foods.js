@@ -4,6 +4,7 @@ const foods = () => {
 
     data.forEach((element) => {
       const { id, name, description, urlImage, urlRecipe } = element;
+
       foodsFoods.innerHTML += `
         <div class="col-md-4" key=${id}>
           <div class="card bg-dark border border-2 border-light border-opacity-25 h-100 mx-auto"
