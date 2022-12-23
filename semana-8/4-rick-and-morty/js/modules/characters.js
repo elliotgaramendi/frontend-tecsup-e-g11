@@ -1,6 +1,11 @@
 const characters = () => {
+  const previousCharacters = document.getElementById('previousCharacters');
+  const nextCharacters = document.getElementById('nextCharacters');
+  let page = 1;
+
   const renderCharacters = (data) => {
     const charactersContainer = document.getElementById('charactersContainer');
+    charactersContainer.innerHTML = '';
 
     data.forEach((element) => {
       const { id, name, status, species, type, gender, origin, location, image } = element;
@@ -34,17 +39,26 @@ const characters = () => {
     });
   };
 
-  const fetchRead = async () => {
+  const fetchRead = async (page) => {
     try {
-      const { data } = await axios.get('https://rickandmortyapi.com/api/character?page=1');
+      const { data } = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
       renderCharacters(data.results);
     } catch (error) {
       console.log(error);
     } finally {
-      console.log('fetchRead');
+      window.scrollTo(0, 0);
     }
   };
-  fetchRead();
+
+  previousCharacters.addEventListener('click', () => {
+    fetchRead(--page);
+  });
+
+  nextCharacters.addEventListener('click', () => {
+    fetchRead(++page);
+  });
+
+  fetchRead(page);
 };
 
 export default characters;
