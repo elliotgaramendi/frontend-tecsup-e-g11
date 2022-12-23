@@ -1,11 +1,11 @@
-const foods = () => {
-  const renderFoods = (data) => {
-    const foodsFoods = document.getElementById('foodsFoods');
+const characters = () => {
+  const renderCharacters = (data) => {
+    const charactersContainer = document.getElementById('charactersContainer');
 
     data.forEach((element) => {
       const { id, name, description, urlImage, urlRecipe } = element;
 
-      foodsFoods.innerHTML += `
+      charactersContainer.innerHTML += `
         <div class="col-md-4" key=${id}>
           <div class="card bg-dark border border-2 border-light border-opacity-25 h-100 mx-auto"
             style="width: min(100%, 18rem);">
@@ -28,11 +28,12 @@ const foods = () => {
   };
 
   const fetchRead = async () => {
-    const response = await fetch('https://elliotgaramendi.github.io/frontend-tecsup-e-g11/semana-8/3-chanchirata/api/data.json');
+    const response = await fetch('https://rickandmortyapi.com/api/character?page=1');
     const data = await response.json();
-    renderFoods(data);
+    console.log(data);
+    // renderCharacters(data);
   };
   fetchRead();
 };
 
-export default foods;
+export default characters;

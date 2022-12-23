@@ -1,9 +1,9 @@
 'use strict';
 
-import foods from "./modules/foods.js";
+import characters from "./modules/characters.js";
 
 const documentReady = () => {
-  foods();
+  characters();
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);
