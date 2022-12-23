@@ -28,10 +28,14 @@ const characters = () => {
   };
 
   const fetchRead = async () => {
-    const response = await fetch('https://rickandmortyapi.com/api/character?page=1');
-    const data = await response.json();
-    console.log(data);
-    // renderCharacters(data);
+    try {
+      const { data } = await axios.get('https://rickandmortyapi.com/api/character?page=1');
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      console.log('fetchRead');
+    }
   };
   fetchRead();
 };
