@@ -17,11 +17,16 @@ const characters = () => {
                 style="width: 100%; height: 192px; object-fit: cover; border-radius: 0.5rem"/>
               <h5 class="card-title mt-2">${name}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${type || 'Chanchito'}</h6>
-              <p class="card-text">${status}</p>
-              <a href="#" class="card-link">Card link</a>
+              <p class="card-text">
+                <span class="badge text-bg-info">${status}</span>
+                <span class="badge text-bg-primary">${species}</span>
+                <span class="badge text-bg-secondary">${gender}</span>
+              </p>
+              <p class="card-text"><span class="text-info fw-bold">Origen:</span> ${origin.name}</p>
+              <p class="card-text"><span class="text-info fw-bold">Ubicación:</span> ${location.name}</p>
             </div>
             <div class="card-footer text-center">
-              <a href="${species}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Receta</a>
+              <a href="${image}" target="_blank" rel="noopener noreferrer" class="card-link">Descargar imagen</a>
             </div>
           </div>
         </div>
