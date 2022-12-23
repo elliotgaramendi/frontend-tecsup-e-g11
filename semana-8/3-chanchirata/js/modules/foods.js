@@ -1,9 +1,6 @@
 const foods = () => {
-  const foodsFoods = document.getElementById('foodsFoods');
-
-  const fetchApi = async () => {
-    const response = await fetch('https://elliotgaramendi.github.io/frontend-tecsup-e-g11/semana-8/3-chanchirata/api/data.json');
-    const data = await response.json();
+  const renderFoods = (data) => {
+    const foodsFoods = document.getElementById('foodsFoods');
 
     data.forEach((element) => {
       const { id, name, description, urlImage, urlRecipe } = element;
@@ -28,7 +25,13 @@ const foods = () => {
       `;
     });
   };
-  fetchApi();
+
+  const fetchRead = async () => {
+    const response = await fetch('https://elliotgaramendi.github.io/frontend-tecsup-e-g11/semana-8/3-chanchirata/api/data.json');
+    const data = await response.json();
+    renderFoods(data);
+  };
+  fetchRead();
 };
 
 export default foods;
