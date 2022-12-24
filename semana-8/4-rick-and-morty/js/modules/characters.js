@@ -39,7 +39,7 @@ const characters = () => {
     });
   };
 
-  const fetchRead = async (page) => {
+  const fetchReadCharacters = async (page) => {
     try {
       const { data } = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
       renderCharacters(data.results);
@@ -51,14 +51,14 @@ const characters = () => {
   };
 
   previousCharacters.addEventListener('click', () => {
-    fetchRead(--page);
+    fetchReadCharacters(--page);
   });
 
   nextCharacters.addEventListener('click', () => {
-    fetchRead(++page);
+    fetchReadCharacters(++page);
   });
 
-  fetchRead(page);
+  fetchReadCharacters(page);
 };
 
 export default characters;
