@@ -6,4 +6,16 @@
   width: 100%;
 }
 
+.nav {
+  --padding-nav: 1.5rem;
+  padding-top: var(--padding-nav);
+  padding-bottom: var(--padding-nav);
+}
+.nav__logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=fe.css.map */
