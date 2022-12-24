@@ -1,0 +1,30 @@
+.button-theme {
+  position: relative;
+  display: block;
+  background-color: var(--secondary-theme-color);
+  border: 0.0625rem solid var(--secondary-theme-color);
+  box-shadow: 0 0 0.125rem 0 var(--primary-shadow-color);
+  border-radius: var(--primary-border-radius);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.125em 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: var(--primary-theme-color);
+    box-shadow:
+      0 0 0 0.0625rem var(--primary-shadow-color),
+      0 0 0 0.125rem var(--primary-shadow-color);
+    border-radius: 50%;
+    transform: translate(0, -50%);
+  }
+}
