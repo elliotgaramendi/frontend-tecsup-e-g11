@@ -33,3 +33,14 @@ export const renderCharacters = (data) => {
     `;
   });
 };
+
+export const fetchReadCharacters = async (page = 1, name = '') => {
+  try {
+    const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?page=${page}&name=${name}`);
+    return data.results;
+  } catch (error) {
+    console.log(error);
+  } finally {
+    window.scrollTo(0, 0);
+  }
+};
