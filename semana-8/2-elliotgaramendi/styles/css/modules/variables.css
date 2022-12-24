@@ -1,5 +1,6 @@
 :root {
   scroll-behavior: smooth;
+  color-scheme: dark;
   --primary-theme-color: #20232a;
   --secondary-theme-color: #282c34;
   --primary-text-color: #fff;
@@ -25,5 +26,17 @@
     --max-width-container: 1024px;
     --padding-section: 2rem;
     --padding-container: 0.75rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --primary-theme-color: #fff;
+    --secondary-theme-color: #eee;
+    --primary-text-color: #000;
+    --secondary-text-color: #777;
+    --primary-shadow-color: #00000080;
+    --secondary-shadow-color: #00000040;
   }
 }
