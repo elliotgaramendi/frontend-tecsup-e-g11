@@ -1,8 +1,10 @@
+import AppointmentsForm from "../components/appointments/AppointmentsForm";
+
 const Appointments = () => {
   return (
     <section className="py-4">
       <div className="container d-flex justify-content-between">
-        <h3>Appointments</h3>
+        <AppointmentsForm />
       </div>
     </section>
   );
