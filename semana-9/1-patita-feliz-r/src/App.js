@@ -1,8 +1,15 @@
 import './App.css';
+import Header from './components/secions/Header';
 
 function App() {
+
+  const company = {
+    name: 'Patita Feliz',
+    slogan: '🐭 La mejor veterinaria del Perú 🐭'
+  };
+
   return (
-    <h1>Patita Feliz</h1>
+    <Header company={company} />
   );
 }
 
