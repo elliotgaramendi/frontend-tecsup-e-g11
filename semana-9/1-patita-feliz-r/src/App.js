@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/secions/Footer';
 import Header from './components/secions/Header';
+import Appointments from './pages/Appointments';
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
   return (
     <>
       <Header company={company} />
+      <main>
+        <Appointments />
+      </main>
       <Footer credits={credits} />
     </>
   );
