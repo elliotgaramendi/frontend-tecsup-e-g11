@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const AppointmentsForm = () => {
+const AppointmentsForm = ({ appointments, setAppointments }) => {
 
   const [appointmentForm, setAppointmentForm] = useState({
     mascota: '',
     propietario: '',
     fecha: '',
     hora: '',
-    síntomas: ''
+    sintomas: ''
   });
 
   const handleInput = (e) => {
@@ -17,10 +17,18 @@ const AppointmentsForm = () => {
     })
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setAppointments([
+      ...appointments,
+      appointmentForm
+    ]);
+  };
+
   return (
     <div className="d-flex flex-column gap-3">
-      <h3 className="text-center m-0">🐶 Crear Cita🐶</h3>
-      <form className="text-dark">
+      <h3 className="text-center m-0">🐶 Crear Cita 🐶</h3>
+      <form className="text-dark" onSubmit={handleSubmit}>
         <div className="form-floating mb-3">
           <input
             type="text"
