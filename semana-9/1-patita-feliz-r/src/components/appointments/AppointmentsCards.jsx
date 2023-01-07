@@ -1,6 +1,6 @@
 const AppointmentsCards = ({ appointments }) => {
   return (
-    <div className="d-flex flex-column gap-3">
+    <div className="col-md-6 d-flex flex-column gap-3">
       <h3 className="text-center m-0">🐱 Citas 🐱</h3>
       <ul className="list-group">
         {appointments.map((element, index) => {
