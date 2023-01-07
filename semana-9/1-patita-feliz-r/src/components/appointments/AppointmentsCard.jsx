@@ -1,5 +1,12 @@
-const AppointmentsCard = ({ appointment }) => {
+const AppointmentsCard = ({ index, appointment, appointments, setAppointments }) => {
   const { mascota, propietario, fecha, hora, sintomas } = appointment;
+
+  const handleClickDelete = (i) => {
+    setAppointments(appointments.filter((_, index) => {
+      return index !== i;
+    }));
+  };
+
   return (
     <li className="list-group-item list-group-item-action" aria-current="true">
       <div className="d-flex w-100 justify-content-between">
@@ -17,7 +24,10 @@ const AppointmentsCard = ({ appointment }) => {
         >
           Confirmar
         </a>
-        <button className="btn btn-danger btn-sm">
+        <button
+          className="btn btn-danger btn-sm"
+          onClick={() => handleClickDelete(index)}
+        >
           Eliminar
         </button>
       </div>

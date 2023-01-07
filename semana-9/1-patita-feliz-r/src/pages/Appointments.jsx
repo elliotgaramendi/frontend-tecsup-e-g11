@@ -15,6 +15,7 @@ const Appointments = () => {
         />
         <AppointmentsCards
           appointments={appointments}
+          setAppointments={setAppointments}
         />
       </div>
     </section>
