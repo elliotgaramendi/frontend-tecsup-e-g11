@@ -89,12 +89,81 @@
       margin: 0;
       transition: background-color 0.25s, color 0.25s;
     }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.25s;
+    }
+
+    .loader--modal {
+      position: fixed;
+      z-index: 50;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--light-primary-shadow-color);
+    }
+
+    .loader--hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loader__spinner {
+      position: relative;
+    }
+
+    .loader__spinner::before,
+    .loader__spinner::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .loader__spinner::before {
+      box-shadow: 0 0 0.25rem 0.125rem var(--secondary-shadow-color) inset;
+    }
+
+    .loader__spinner::after {
+      box-shadow: 0 0.125rem 0.125rem 0 var(--primary-highlight-color) inset;
+      animation: rotate 1s linear infinite;
+    }
+
+    .loader__spinner--modal {
+      width: 8rem;
+      height: 8rem;
+    }
   </style>
 </head>
 
 <body class="body">
+  <section class="loader loader--modal" id="loader">
+    <div class="loader__spinner loader__spinner--modal"></div>
+  </section>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.classList.add('loader--hidden');
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 1000);
+    });
+  </script>
 </body>
 
 </html>
