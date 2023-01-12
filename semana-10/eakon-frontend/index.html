@@ -17,8 +17,76 @@
     rel="stylesheet" />
 
   <style>
+    :root {
+      scroll-behavior: smooth;
+      --dark-primary-text-color: #fff;
+      --light-primary-text-color: #000;
+      --light-primary-shadow-color: #00000080;
+      --light-secondary-shadow-color: #00000040;
+      --primary-highlight-color: #61dafb;
+      --secondary-highlight-color: gold;
+      --primary-button-color: #61dafb;
+      --secondary-button-color: gold;
+      --primary-font-family: 'Montserrat', sans-serif;
+      --container-max-width: 512px;
+      --container-padding: 1rem;
+      --section-padding: 1.5rem;
+      --primary-border-radius: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      :root {
+        --container-max-width: 1024px;
+        --container-padding: 0.75rem;
+        --section-padding: 2rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary-theme-color: #20232a;
+        --secondary-theme-color: #282c34;
+        --primary-text-color: #fff;
+        --secondary-text-color: #888;
+        --primary-shadow-color: #ffffff80;
+        --secondary-shadow-color: #ffffff40;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --primary-theme-color: #fff;
+        --secondary-theme-color: #eee;
+        --primary-text-color: #000;
+        --secondary-text-color: #777;
+        --primary-shadow-color: #00000080;
+        --secondary-shadow-color: #00000040;
+      }
+    }
+
+    :root.dark {
+      --primary-theme-color: #20232a;
+      --secondary-theme-color: #282c34;
+      --primary-text-color: #fff;
+      --secondary-text-color: #888;
+      --primary-shadow-color: #ffffff80;
+      --secondary-shadow-color: #ffffff40;
+    }
+
+    :root.light {
+      --primary-theme-color: #fff;
+      --secondary-theme-color: #eee;
+      --primary-text-color: #000;
+      --secondary-text-color: #777;
+      --primary-shadow-color: #00000080;
+      --secondary-shadow-color: #00000040;
+    }
+
+
     .body {
-      font-family: 'Montserrat', sans-serif;
+      background-color: var(--primary-theme-color);
+      color: var(--primary-text-color);
+      font-family: var(--primary-font-family);
     }
   </style>
 </head>
